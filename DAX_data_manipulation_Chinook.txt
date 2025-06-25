@@ -1,0 +1,7 @@
+DAX 
+
+Total Sales = SUM(vw_SalesFact[LineTotal])
+
+Customer Count = DISTINCTCOUNT(vw_SalesFact[InvoiceID])
+
+Average Order Value = DIVIDE ([Total Sales], DISTINCTCOUNT(vw, SalesFact[InvoiceID]))
